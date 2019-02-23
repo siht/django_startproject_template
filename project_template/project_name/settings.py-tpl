@@ -15,7 +15,10 @@ import environ
 base_dir = environ.Path(__file__) - 2
 env = environ.Env(
     DEBUG=(bool, False),
-    ALLOWED_HOSTS=(list,[])
+    ALLOWED_HOSTS=(list,[]),
+    USE_I18N=bool,
+    USE_L10N=bool,
+    USE_TZ=bool,
 )
 environ.Env.read_env()
 
